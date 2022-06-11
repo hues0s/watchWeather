@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    let currentCountry: Country = Country(name: "Singapore", flag: "dollarsign.square")
+    let currentCountry: City = City(name: "Madrid", flag: "dollarsign.square")
     
     var body: some View {
         WeatherView(country: currentCountry)

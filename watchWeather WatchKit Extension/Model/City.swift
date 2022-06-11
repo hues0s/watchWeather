@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Country {
+struct City {
     let name: String
     let flag: String
 }

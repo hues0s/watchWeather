@@ -9,12 +9,18 @@ import SwiftUI
 
 struct WeatherView: View {
     
-    let country: Country
+    @ObservedObject var weatherViewModel: WeatherViewModel
+    let country: City
+    
+    init(country: City) {
+        self.country = country
+        weatherViewModel = WeatherViewModel(city: country.name)
+    }
     
     var body: some View {
         VStack {
             HStack {
-                Text("30ºC").font(.system(size: 30))
+                Text("\(weatherViewModel.temperature)ºC").font(.system(size: 30))
                 Spacer()
             }
             
@@ -37,6 +43,6 @@ struct WeatherView: View {
 
 struct WeatherView_Previews: PreviewProvider {
     static var previews: some View {
-        WeatherView(country: Country(name: "Singapore", flag: "dollarsign.square"))
+        WeatherView(country: City(name: "Singapore", flag: "dollarsign.square"))
     }
 }
