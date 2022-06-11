@@ -15,6 +15,9 @@
 		DC6258E02854878A00E01C77 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6258DF2854878A00E01C77 /* ComplicationController.swift */; };
 		DC6258E22854878B00E01C77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC6258E12854878B00E01C77 /* Assets.xcassets */; };
 		DC6258E52854878B00E01C77 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC6258E42854878B00E01C77 /* Preview Assets.xcassets */; };
+		DCF1964E28548C090019EF24 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF1964D28548C090019EF24 /* WeatherView.swift */; };
+		DCF1965028548E010019EF24 /* CountryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF1964F28548E010019EF24 /* CountryListView.swift */; };
+		DCF1965228548FE90019EF24 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF1965128548FE90019EF24 /* Country.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +73,9 @@
 		DC6258E12854878B00E01C77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC6258E42854878B00E01C77 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DC6258E62854878B00E01C77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCF1964D28548C090019EF24 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
+		DCF1964F28548E010019EF24 /* CountryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListView.swift; sourceTree = "<group>"; };
+		DCF1965128548FE90019EF24 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +119,10 @@
 		DC6258DA2854878A00E01C77 /* watchWeather WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				DC6258DB2854878A00E01C77 /* ContentView.swift */,
+				DCF1964C28548B600019EF24 /* Service */,
+				DCF1964B28548B5A0019EF24 /* Model */,
+				DCF1964A28548B510019EF24 /* ViewModel */,
+				DCF1964928548B090019EF24 /* View */,
 				DC6258DD2854878A00E01C77 /* watchWeatherApp.swift */,
 				DC6258DF2854878A00E01C77 /* ComplicationController.swift */,
 				DC6258E12854878B00E01C77 /* Assets.xcassets */,
@@ -129,6 +138,38 @@
 				DC6258E42854878B00E01C77 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DCF1964928548B090019EF24 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DC6258DB2854878A00E01C77 /* ContentView.swift */,
+				DCF1964D28548C090019EF24 /* WeatherView.swift */,
+				DCF1964F28548E010019EF24 /* CountryListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DCF1964A28548B510019EF24 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DCF1964B28548B5A0019EF24 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DCF1965128548FE90019EF24 /* Country.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DCF1964C28548B600019EF24 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +299,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCF1965028548E010019EF24 /* CountryListView.swift in Sources */,
 				DC6258DE2854878A00E01C77 /* watchWeatherApp.swift in Sources */,
 				DC6258DC2854878A00E01C77 /* ContentView.swift in Sources */,
 				DC6258E02854878A00E01C77 /* ComplicationController.swift in Sources */,
+				DCF1965228548FE90019EF24 /* Country.swift in Sources */,
+				DCF1964E28548C090019EF24 /* WeatherView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
