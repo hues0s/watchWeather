@@ -9,11 +9,9 @@ import Foundation
 
 class WeatherService {
     
-    let apiKey: String = "006ddea2f883d196eccfdfa1ab36fff1"
-    
     func getWeather(city: String, completion: @escaping (Weather?) -> ()) {
         
-        let urlString = "https://api.openweathermap.org/data/2.5/weather?q=\(city)&units=metric&appid=\(apiKey)"
+        let urlString = "https://api.openweathermap.org/data/2.5/weather?q=\(city)&units=metric&appid=\(SecretConstants.OpenWeatherMapKey)"
         
         if let url = URL(string: urlString) {
             

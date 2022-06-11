@@ -21,6 +21,7 @@
 		DCF19654285492D80019EF24 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF19653285492D80019EF24 /* Weather.swift */; };
 		DCF196562854932E0019EF24 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF196552854932E0019EF24 /* WeatherService.swift */; };
 		DCF196582854F47B0019EF24 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF196572854F47B0019EF24 /* WeatherViewModel.swift */; };
+		DCF1965A2854FD950019EF24 /* SecretConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF196592854FD950019EF24 /* SecretConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		DCF19653285492D80019EF24 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		DCF196552854932E0019EF24 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		DCF196572854F47B0019EF24 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		DCF196592854FD950019EF24 /* SecretConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 				DCF1964A28548B510019EF24 /* ViewModel */,
 				DCF1964928548B090019EF24 /* View */,
 				DC6258DD2854878A00E01C77 /* watchWeatherApp.swift */,
+				DCF196592854FD950019EF24 /* SecretConstants.swift */,
 				DC6258DF2854878A00E01C77 /* ComplicationController.swift */,
 				DC6258E12854878B00E01C77 /* Assets.xcassets */,
 				DC6258E62854878B00E01C77 /* Info.plist */,
@@ -317,6 +320,7 @@
 				DCF1965228548FE90019EF24 /* City.swift in Sources */,
 				DCF1964E28548C090019EF24 /* WeatherView.swift in Sources */,
 				DCF19654285492D80019EF24 /* Weather.swift in Sources */,
+				DCF1965A2854FD950019EF24 /* SecretConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
