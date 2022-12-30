@@ -11,9 +11,7 @@ class WeatherService {
     
     func getWeather(city: String) async -> Weather? {
         
-        let urlString = "https://api.openweathermap.org/data/2.5/weather?q=\(city)&units=metric&appid=\(SecretConstants.OpenWeatherMapKey)"
-        
-        guard let url = URL(string: urlString) else {
+        guard let url = URL(string: Constant.OpenWeatherMapApiString + city) else {
             return nil
         }
         
