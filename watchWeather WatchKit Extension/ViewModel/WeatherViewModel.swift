@@ -18,7 +18,6 @@ class WeatherViewModel: NSObject, ObservableObject {
     @Published var weatherIcon: String = ""
     
     override init() {
-        //fetchWeather()
         super.init()
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
