@@ -10,39 +10,33 @@ import SwiftUI
 struct WeatherView: View {
     
     @ObservedObject var weatherViewModel: WeatherViewModel
-    let country: City
     
-    init(country: City) {
-        self.country = country
-        weatherViewModel = WeatherViewModel(city: country.name)
+    init() {
+        weatherViewModel = WeatherViewModel()
     }
     
     var body: some View {
         VStack {
-            HStack {
-                Text("\(weatherViewModel.temperature)ºC").font(.system(size: 30))
-                Spacer()
-            }
+            Text(weatherViewModel.city)
+                .font(.system(size: 20))
+                .padding([.leading, .trailing], 10)
+                .padding(.top)
             
-            Spacer()
+            Text(weatherViewModel.temperature)
+                .font(.system(size: 45))
             
-            HStack {
-                Text(country.name).font(.system(size: 16))
-                Spacer()
-                Image(systemName: country.flag).resizable().frame(width: 60, height: 60)
-            }
+            Text(Constant.weatherIconMap[weatherViewModel.weatherIcon] ?? "")
+                .font(.system(size: 30))
+                .padding()
             
-            HStack {
-                NavigationLink(destination: CountryListView()) {
-                    Text("Listing")
-                }
-            }
+            Text(weatherViewModel.weatherDescription)
+                .font(.system(size: 13))
         }
     }
 }
 
 struct WeatherView_Previews: PreviewProvider {
     static var previews: some View {
-        WeatherView(country: City(name: "Singapore", flag: "dollarsign.square"))
+        WeatherView()
     }
 }

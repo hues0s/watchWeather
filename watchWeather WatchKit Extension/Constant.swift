@@ -6,5 +6,16 @@
 //
 
 struct Constant {
-    static let OpenWeatherMapApiString = "https://api.openweathermap.org/data/2.5/weather?units=metric&appid=\(SecretConstants.OpenWeatherMapKey)&q="
+    static let OpenWeatherMapApiString = "https://api.openweathermap.org/data/2.5/weather?units=metric&appid=\(SecretConstants.OpenWeatherMapKey)"
+    static let weatherIconMap = [
+        "Drizzle" : "🌨",
+        "Thunderstorm" : "⛈",
+        "Rain" : "🌧",
+        "Snow" : "❄️",
+        "Clear" : "☀️",
+        "Clouds" : "☁️",
+        "Mist" : "🌫",
+        "Haze" : "🌫",
+        "" : "❓"
+    ]
 }
