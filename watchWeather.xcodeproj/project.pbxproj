@@ -77,6 +77,7 @@
 		DC6258E42854878B00E01C77 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DC6258E62854878B00E01C77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCD0E4A9295EF7C20091D490 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		DCD0E4AC295FB2650091D490 /* demo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = demo.png; sourceTree = "<group>"; };
 		DCF1964D28548C090019EF24 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
 		DCF19653285492D80019EF24 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		DCF196552854932E0019EF24 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
@@ -98,6 +99,7 @@
 		DC6258C02854878800E01C77 = {
 			isa = PBXGroup;
 			children = (
+				DCD0E4AB295FB24F0091D490 /* Screenshots */,
 				DC6258CF2854878900E01C77 /* watchWeather WatchKit App */,
 				DC6258DA2854878A00E01C77 /* watchWeather WatchKit Extension */,
 				DC6258C82854878800E01C77 /* Products */,
@@ -146,6 +148,14 @@
 				DC6258E42854878B00E01C77 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DCD0E4AB295FB24F0091D490 /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				DCD0E4AC295FB2650091D490 /* demo.png */,
+			);
+			path = Screenshots;
 			sourceTree = "<group>";
 		};
 		DCF1964928548B090019EF24 /* View */ = {
